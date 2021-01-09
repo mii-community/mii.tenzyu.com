@@ -5,7 +5,7 @@ export default props => {
     const baseTitle = "mii"
     const baseDesc = "Discordサーバー『みぃ』"
     const title = props.title ? `${props.title} - ${baseTitle}` : baseTitle
-    const description = props.desc || baseDesc
+    const description = props.desc ? `${props.desc} - ${baseDesc}` : baseDesc
     const image = require("../images/mii.png")
 
     return (
