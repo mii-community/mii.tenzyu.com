@@ -2,8 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 export default props => {
-    const baseTitle = "mii"
-    const baseDesc = "Discordサーバー『みぃ』"
+    const baseTitle = "みぃ"
+    const baseDesc = "Discordサーバー「みぃ」です。"
     const title = props.title ? `${props.title} - ${baseTitle}` : baseTitle
     const description = props.desc ? `${props.desc} - ${baseDesc}` : baseDesc
     const image = require("../images/mii.png")
