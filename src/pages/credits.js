@@ -12,7 +12,7 @@ const contributors = [
   　value: "MinecraftServer「みぃクラフト」のホスト",
   },
   {
-    name: "chun",
+    name: "chun37",
     value: "「みぃ様」のコードレビュー/リファクタリング",
   },
 ]
