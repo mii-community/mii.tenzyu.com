@@ -15,6 +15,10 @@ const contributors = [
     name: "chun37",
     value: "「みぃ様」のコードレビュー/リファクタリング",
   },
+  {
+    name: "Hirosuke",
+    value: "DiscordBot「Wikipedian」の発案/監督",
+  },
 ]
 
 const CreditsPage = () => {
