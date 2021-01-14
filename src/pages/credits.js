@@ -19,6 +19,10 @@ const contributors = [
     name: "Hirosuke",
     value: "DiscordBot「Wikipedian」の発案/監督",
   },
+  {
+    name: "AttoCat",
+    value: "「みぃ様」にPoll機能を追加"
+  }
 ]
 
 const CreditsPage = () => {
