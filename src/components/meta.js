@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 
 export default props => {
     const baseTitle = "みぃ"
-    const baseDesc = "Discordサーバー「みぃ」です。"
+    const baseDesc = "コミュニティ「みぃ」"
     const title = props.title ? `${props.title} - ${baseTitle}` : baseTitle
     const description = props.desc ? `${props.desc} - ${baseDesc}` : baseDesc
     const image = require("../images/mii.png")
