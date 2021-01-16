@@ -14,5 +14,12 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `mii.tenzyu.com`,
+        icon: `src/images/mii-rounded.png`,
+      },
+    },
   ],
 };
