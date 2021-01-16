@@ -1,8 +1,8 @@
-import React from "react"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
-import '../utils/base.css'
+import "../utils/base.css";
 
 export default ({ children }) => (
   <>
@@ -10,4 +10,4 @@ export default ({ children }) => (
     {children}
     <Footer />
   </>
-)
+);

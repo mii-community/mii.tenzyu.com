@@ -1,6 +1,6 @@
-import * as React from "react"
-import Layout from "../layouts/default"
-import Meta from "../components/meta"
+import * as React from "react";
+import Layout from "../layouts/default";
+import Meta from "../components/meta";
 
 const repositories = [
   {
@@ -18,34 +18,48 @@ const repositories = [
     src: "https://gh-card.dev/repos/mii-community/mii.tenzyu.com.svg",
     alt: "GitHubのリポジトリ: mii.tenzyu.com",
   },
-]
+];
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Meta title="ホーム" desc=""/>
+      <Meta title="ホーム" desc="" />
       <main class="container mx-auto px-4">
-        <h1 class="border-b border-gray-500 text-center pb-4 text-2xl">コミュニティ「みぃ」</h1>
+        <h1 class="border-b border-gray-500 text-center pb-4 text-2xl">
+          コミュニティ「みぃ」
+        </h1>
         <section class="my-4">
           <h2 class="text-xl">Repositories</h2>
           <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
-            {repositories.map(repository => (
-            <li>
+            {repositories.map((repository) => (
+              <li>
                 <a href={repository.href} target="_brank">
-                    <img class="w-full" src={repository.src} alt={repository.alt} />
+                  <img
+                    class="w-full"
+                    src={repository.src}
+                    alt={repository.alt}
+                  />
                 </a>
-            </li>
+              </li>
             ))}
           </ul>
         </section>
         <section class="my-4">
-          <iframe title="googleCalendar" class="w-full h-screen my-4 border border-solid border-gray-500" src="https://calendar.google.com/calendar/embed?height=640&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=Asia%2FTokyo&amp;src=N25mZW1hc3Z2OXBncjJlbmVtOGw0MDVmZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23A79B8E&amp;color=%230B8043&amp;showTitle=1&amp;showPrint=0&amp;mode=MONTH" frameborder="0" scrolling="no"></iframe>
+          <iframe
+            title="googleCalendar"
+            class="w-full h-screen my-4 border border-solid border-gray-500"
+            src="https://calendar.google.com/calendar/embed?height=640&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=Asia%2FTokyo&amp;src=N25mZW1hc3Z2OXBncjJlbmVtOGw0MDVmZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23A79B8E&amp;color=%230B8043&amp;showTitle=1&amp;showPrint=0&amp;mode=MONTH"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
           <p class="text-xl">NOTE</p>
-          <p>このカレンダーは一般公開して誰でも利用できるようにしており、全ての予定の詳細までを表示するように設定しています。</p>
+          <p>
+            このカレンダーは一般公開して誰でも利用できるようにしており、全ての予定の詳細までを表示するように設定しています。
+          </p>
         </section>
-       </main>
+      </main>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
