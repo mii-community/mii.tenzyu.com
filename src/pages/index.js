@@ -28,7 +28,7 @@ const IndexPage = () => {
         <h1 class="border-b border-gray-500 text-center pb-4 text-2xl">
           コミュニティ「みぃ」
         </h1>
-        <section class="my-4">
+        <section class="mt-4 mb-8">
           <h2 class="text-xl">Repositories</h2>
           <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
             {repositories.map((repository) => (
@@ -44,7 +44,8 @@ const IndexPage = () => {
             ))}
           </ul>
         </section>
-        <section class="my-4">
+        <section class="my-8">
+          <h2 class="text-xl">Calendar</h2>
           <iframe
             title="googleCalendar"
             class="w-full h-screen my-4 border border-solid border-gray-500"
@@ -52,7 +53,7 @@ const IndexPage = () => {
             frameborder="0"
             scrolling="no"
           ></iframe>
-          <p class="text-xl">NOTE</p>
+          <p class="text-lg">NOTE</p>
           <p>
             このカレンダーは一般公開して誰でも利用できるようにしており、全ての予定の詳細までを表示するように設定しています。
           </p>
