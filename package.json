@@ -28,6 +28,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-twitter-embed": "^3.0.3",
     "tailwindcss": "^2.0.2"
   }
 }
