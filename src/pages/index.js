@@ -6,19 +6,19 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 const repositories = [
   {
-    href: "https://github.com/mii-community/Wikipedian",
-    src: "https://gh-card.dev/repos/mii-community/Wikipedian.svg",
-    alt: "GitHubのリポジトリー: Wikipedian",
-  },
-  {
     href: "https://github.com/mii-community/mii",
-    src: "https://gh-card.dev/repos/mii-community/mii.svg",
+    name: "mii",
     alt: "GitHubのリポジトリー: mii",
   },
   {
     href: "https://github.com/mii-community/mii.tenzyu.com",
-    src: "https://gh-card.dev/repos/mii-community/mii.tenzyu.com.svg",
+    name: "mii.tenzyu.com",
     alt: "GitHubのリポジトリ: mii.tenzyu.com",
+  },
+  {
+    href: "https://github.com/mii-community/Wikipedian",
+    name: "Wikipedian",
+    alt: "GitHubのリポジトリー: Wikipedian",
   },
 ];
 
@@ -38,7 +38,7 @@ const IndexPage = () => {
                 <a href={repository.href} target="_brank">
                   <img
                     class="w-full"
-                    src={repository.src}
+                    src={`https://github-readme-stats.vercel.app/api/pin/?username=mii-community&repo=${repository.name}`}
                     alt={repository.alt}
                   />
                 </a>
