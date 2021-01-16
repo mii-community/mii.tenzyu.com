@@ -5,6 +5,7 @@
 - Repositories
 - GoogleCalendar
 - CreditsPage
+- ContactPage
 
 サイトにアクセス: [mii.tenzyu.com](https://mii.tenzyu.com/)
 
