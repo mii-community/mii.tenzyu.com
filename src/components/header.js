@@ -6,6 +6,10 @@ const navs = [
     name: "Credits",
     link: "/credits/",
   },
+  {
+    name: "Contact",
+    link: "/contact/",
+  },
 ];
 
 export default () => (
@@ -13,7 +17,7 @@ export default () => (
     <h1 class="my-auto text-xl">
       <Link to={"/"}>HOME</Link>
     </h1>
-    <nav class="my-auto w-1/3">
+    <nav class="my-auto w-1/2">
       <ul class="flex justify-around">
         {navs.map((nav) => (
           <li>
