@@ -23,7 +23,7 @@ const repositories = [
 const IndexPage = () => {
   return (
     <Layout>
-      <Meta title="ホーム" desc="" />
+      <Meta title="ホーム" desc="リポジトリやGoogleカレンダーなど" />
       <main class="container mx-auto px-4">
         <h1 class="border-b border-gray-500 text-center pb-4 text-2xl">
           コミュニティ「みぃ」

@@ -28,7 +28,7 @@ const contributors = [
 const CreditsPage = () => {
   return (
     <Layout>
-      <Meta title="クレジット" desc="クレジットタイトルがあるよ。" />
+      <Meta title="クレジット" desc="クレジットタイトル,貢献者一覧" />
       <main class="container mx-auto px-4 md:text-xl">
         <h1 class="border-b border-gray-500 text-center pb-4 text-2xl">
           Credits

@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 const NotFoundPage = () => {
   return (
     <Layout>
-      <Meta title="404" />
+      <Meta title="404" desc="ページが見つかりませんでした。" />
       <main class="text-center space-y-8 my-8">
         <h2 class="text-xl md:text-3xl">ページが見つかりませんでした。</h2>
         <h3 class="text-xl md:text-2xl text-blue-500">
