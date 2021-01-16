@@ -2,6 +2,8 @@ import * as React from "react";
 import Layout from "../layouts/default";
 import Meta from "../components/meta";
 
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+
 const repositories = [
   {
     href: "https://github.com/mii-community/Wikipedian",
@@ -48,7 +50,7 @@ const IndexPage = () => {
           <h2 class="text-xl">Calendar</h2>
           <iframe
             title="googleCalendar"
-            class="w-full h-screen my-4 border border-solid border-gray-500"
+            class="w-full h-screen border border-solid border-gray-500"
             src="https://calendar.google.com/calendar/embed?height=640&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=Asia%2FTokyo&amp;src=N25mZW1hc3Z2OXBncjJlbmVtOGw0MDVmZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23A79B8E&amp;color=%230B8043&amp;showTitle=1&amp;showPrint=0&amp;mode=MONTH"
             frameborder="0"
             scrolling="no"
@@ -57,6 +59,17 @@ const IndexPage = () => {
           <p>
             このカレンダーは一般公開して誰でも利用できるようにしており、全ての予定の詳細までを表示するように設定しています。
           </p>
+        </section>
+        <section class="my-8">
+          <h2 class="text-xl">Tweets</h2>
+          <div class="max-w-sm">
+            <TwitterTimelineEmbed
+              sourceType="list"
+              id={1293148576634114049n}
+              theme="dark"
+              options={{ height: 600 }}
+            />
+          </div>
         </section>
       </main>
     </Layout>
