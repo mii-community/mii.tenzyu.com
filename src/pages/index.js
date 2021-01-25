@@ -28,24 +28,53 @@ const IndexPage = () => {
       <Meta title="ホーム" desc="リポジトリやGoogleカレンダーなど" />
       <main class="container mx-auto px-4">
         <h1 class="border-b border-gray-500 text-center pb-4 text-2xl">
-          コミュニティ「みぃ」
+          みぃコミュニティ
         </h1>
-        <section class="mt-4 mb-8">
-          <h2 class="text-xl">Repositories</h2>
-          <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-3">
-            {repositories.map((repository) => (
-              <li>
-                <a href={repository.href} target="_brank">
-                  <img
-                    class="w-full"
-                    src={`https://github-readme-stats.vercel.app/api/pin/?username=mii-community&repo=${repository.name}`}
-                    alt={repository.alt}
-                  />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
+        <div class="lg:flex">
+          <div class="mb-3 sm:space-y-4 sm:gap-x-2 sm:grid sm:grid-cols-2 lg:w-2/3 lg:mr-2">
+            <section class="my-8 sm:my-4">
+              <h2 class="text-xl">Tweets</h2>
+              <div class="w-full">
+                <TwitterTimelineEmbed
+                  sourceType="list"
+                  id={1293148576634114049n}
+                  theme="dark"
+                  options={{ height: 600 }}
+                />
+              </div>
+            </section>
+            <section class="my-8">
+              <h2 class="text-xl">Discord</h2>
+              <div class="w-full">
+                <iframe
+                  title="DiscordWidget"
+                  src="https://discord.com/widget?id=608634154019586059&theme=dark"
+                  width="100%"
+                  height="600"
+                  allowtransparency="true"
+                  frameborder="0"
+                  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                ></iframe>
+              </div>
+            </section>
+          </div>
+          <section class="my-8">
+            <h2 class="text-xl">Repositories</h2>
+            <ul class="space-y-2 mb-3 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-2 lg:grid-cols-1">
+              {repositories.map((repository) => (
+                <li>
+                  <a href={repository.href} target="_brank">
+                    <img
+                      class="w-full"
+                      src={`https://github-readme-stats.vercel.app/api/pin/?username=mii-community&repo=${repository.name}`}
+                      alt={repository.alt}
+                    />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </div>
         <section class="my-8">
           <h2 class="text-xl">Calendar</h2>
           <iframe
@@ -59,17 +88,6 @@ const IndexPage = () => {
           <p>
             このカレンダーは一般公開して誰でも利用できるようにしており、全ての予定の詳細までを表示するように設定しています。
           </p>
-        </section>
-        <section class="my-8">
-          <h2 class="text-xl">Tweets</h2>
-          <div class="max-w-sm">
-            <TwitterTimelineEmbed
-              sourceType="list"
-              id={1293148576634114049n}
-              theme="dark"
-              options={{ height: 600 }}
-            />
-          </div>
         </section>
       </main>
     </Layout>
